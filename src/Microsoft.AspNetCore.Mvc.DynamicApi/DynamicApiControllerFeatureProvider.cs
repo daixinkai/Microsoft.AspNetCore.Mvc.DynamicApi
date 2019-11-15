@@ -7,7 +7,7 @@ using System.Text;
 namespace Microsoft.AspNetCore.Mvc.DynamicApi
 {
     public class DynamicApiControllerFeatureProvider : ControllerFeatureProvider
-    {
+    {        
         protected override bool IsController(TypeInfo typeInfo)
         {
             return typeInfo.IsProxyApi();

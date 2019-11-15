@@ -37,7 +37,7 @@ namespace Microsoft.AspNetCore.Mvc
 
             builder.PartManager.FeatureProviders.Add(new DynamicApiControllerFeatureProvider());
 
-            builder.Services.TryAddEnumerable(ServiceDescriptor.Singleton<IControllerPropertyActivator, DynamicApiControllerPropertyActivator>());
+            //builder.Services.TryAddEnumerable(ServiceDescriptor.Singleton<IControllerPropertyActivator, DynamicApiControllerPropertyActivator>());
 
             return builder;
         }

@@ -131,7 +131,8 @@ namespace Microsoft.AspNetCore.Mvc.DynamicApi.Reflection
             {
                 iLGenerator.Emit(OpCodes.Ldarg_S, i + 1);
             }
-            iLGenerator.Emit(OpCodes.Call, method);
+            //iLGenerator.Emit(OpCodes.Call, method);
+            iLGenerator.Emit(OpCodes.Callvirt, method);
             iLGenerator.Emit(OpCodes.Ret);
             var datas = CustomAttributeData.GetCustomAttributes(method);
             foreach (var data in datas)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Microsoft.AspNetCore.Mvc.DynamicApi.TestWeb
+namespace Microsoft.AspNetCore.Mvc.DynamicApi.TestWeb.NETCORE30
 {    
     [DynamicApi("api/testService")]
     public interface ITestService
