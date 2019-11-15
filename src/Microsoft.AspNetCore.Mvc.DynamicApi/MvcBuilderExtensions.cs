@@ -39,6 +39,11 @@ namespace Microsoft.AspNetCore.Mvc
 
             //builder.Services.TryAddEnumerable(ServiceDescriptor.Singleton<IControllerPropertyActivator, DynamicApiControllerPropertyActivator>());
 
+            builder.Services.Configure<MvcOptions>(o =>
+            {
+                o.Conventions.Add(new DynamicApiControllerConvention());
+            });
+
             return builder;
         }
     }
